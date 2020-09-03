@@ -13,9 +13,9 @@ export class FormComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  sex: string[] = ["Male", "Female", "Other"];
+  sex: string[] = ["","Male", "Female", "Other"];
 
-  model:Student = new Student(1,"Name","Surname",25,this.sex[0],"Lithuanian");
+  model:Student = new Student(0,"","",null,this.sex[0],"");
 
   submitted: boolean = false;
 

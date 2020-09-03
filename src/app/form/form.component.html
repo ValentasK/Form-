@@ -1,1 +1,60 @@
-<p>form works!</p>
+<div class="container">
+  <div class="Form">
+    <h2>Student Form</h2>
+
+    <div class="form-input">
+      <label for="">Name: </label>
+      <input type="text" placeholder="Name" [(ngModel)]="model.name" required class="ng-valid"> 
+                                                                      
+    </div>
+
+
+    <div class="form-input">
+      <label for="">Surname: </label>
+      <input type="text" placeholder="Surname" [(ngModel)]="model.surname" required>
+    </div>
+
+    <div class="form-input">
+      <label for="">Age: </label>
+      <input type="text" placeholder="Age" [(ngModel)]="model.age" required>
+    </div>
+
+    <div class="form-input">
+      <label for="">Sex:</label>
+      <select name="" [(ngModel)]="model.sex" required>
+        <option *ngFor="let s of sex" [value]="s">{{s}}</option>
+      </select>
+    </div>
+
+    <div class="form-input">
+      <label for="">Nationality: </label>
+      <input type="text" placeholder="Nationality" [(ngModel)]="model.nationality" required>
+
+    </div>
+
+  </div>
+  <div class="Data">
+    <h2> Form Data</h2>
+
+    <div class="form-output">
+      <H3>Name: <span>{{ model.name }}</span></H3>
+    </div>
+
+    <div class="form-output">
+      <H3>Surname: <span>{{ model.surname }}</span></H3>
+    </div>
+
+    <div class="form-output">
+      <H3>Age: <span>{{ model.age }}</span></H3>
+    </div>
+
+    <div class="form-output">
+      <H3>Sex: <span>{{ model.sex }}</span></H3>
+    </div>
+
+    <div class="form-output">
+      <H3>Nationality: <span>{{ model.nationality }}</span></H3>
+    </div>
+  </div>
+
+</div>

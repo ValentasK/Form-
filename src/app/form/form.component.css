@@ -1,0 +1,41 @@
+.container {
+  width: 400px;
+  margin: auto;
+
+}
+
+.Form {
+  background-color: beige;
+  padding: 10px;
+}
+
+.Data {
+  background-color: bisque;
+  padding:10px;
+}
+
+.form-input {
+  margin-top: 10px;
+}
+
+/* 
+The control has been visited.	ng-touched	ng-untouched
+The control's value has changed.	ng-dirty	ng-pristine
+The control's value is valid.	ng-valid	ng-invalid 
+*/
+
+.ng-valid{
+    border-left: green solid 20px;
+}
+
+.ng-invalid{
+    border-left: red solid 20px;
+}
+
+.ng-touched{
+    background-color: white;
+}
+
+.ng-untouched{
+    background-color: yellow;
+}
